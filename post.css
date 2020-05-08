@@ -1,0 +1,66 @@
+.main {
+	margin-top: 150px;
+}
+
+.main h3 {
+	text-align: center;
+	padding: 5% 5%;
+	color: #3D1B1B;
+	font-size: 2rem;
+	font-family: 'Libre Baskerville', serif;
+}
+
+.main .imgbox {
+	display: flex;
+	justify-content: center;
+}
+
+.main .imgbox img {
+	width: 90%;
+	height: 90%;
+}
+
+.main img {
+	max-width: 40rem;
+	margin-bottom: 2%;
+	display: block;
+}
+
+.main h5 {
+	margin-top: 4%;
+	font-size: 1.5rem;
+	font-family: 'Libre Baskerville', serif;
+	color: #512727;
+}
+
+.main li {
+	margin-bottom: 2%;
+}
+
+.main .back a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2rem;
+	color: #3D1B1B;
+}
+
+.main .back a:hover {
+	text-decoration-line: underline;
+}
+
+@media (max-width: 768px) {
+	.main {
+		margin-top: 14%;
+	}
+}
+
+@media (max-width: 480px) {
+	.main {
+		margin-top: 17%;
+	}
+}
+
+@media (max-width: 385px) {
+	.main {
+		margin-top: 18%;
+	}
+}

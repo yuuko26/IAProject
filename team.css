@@ -1,0 +1,57 @@
+h3 {
+	padding: 5% 0 2%;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #7F0026;
+	margin-bottom: 5%;
+}
+
+.main {
+	margin-top: 18%;
+}
+
+.main img {
+	margin-bottom: 10%;
+}
+
+.custom-list {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 10%;
+}
+
+.custom-list li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.custom-list li:before {
+    content: '';
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    background-image: url('images/logo_0.png');
+    background-size: cover;
+    background-position: center;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+	.main {
+		margin-top: 14%;
+	}
+}
+
+@media (max-width: 480px) {
+	.main {
+		margin-top: 17%;
+	}
+}
+
+@media (max-width: 385px) {
+	.main {
+		margin-top: 18%;
+	}
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>How to keep your footer where it belongs? - Slimes Blog</title>
+	<link rel="icon" href ="images/logo_0.png" type="image/x-icon">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Font -->
+	<link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:700|Ubuntu&display=swap" rel="stylesheet">
+
+	<!-- Icons -->
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="post.css">
+</head>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="menu">
+		<div class="container">
+			
+
+				<div class="nav-head">
+					<a class="navbar-brand" href="index.html"><img src="images/logo_19.png">
+					<h1>Slimes Blog</h1></a>
+				</div>
+
+				<div class="d-lg-none iconbg">
+  					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					    <span class="navbar-toggler-icon"></span>
+					</button>
+				</div>
+
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav ml-auto">
+
+						<li class="nav-item text-nowrap"><a class="nav-link" href="index.html">Home</a></li>
+
+						<li class="nav-item text-nowrap dropdown">
+							<a class="nav-link">About</a>
+							<div class="dropdown-menu">
+							    <a class="dropdown-item" href="team.html">Our Team</a>
+							    <a class="dropdown-item" href="https://www.facebook.com/SlimeRancherGame/" target="_blank">Our Facebook</a>
+							    <a class="dropdown-item" href="https://slimerancher.fandom.com/wiki/Slime_Rancher_Wiki" target="_blank">Our Slimes</a>
+							</div>
+						</li>
+
+						<li class="nav-item text-nowrap">
+							<a class="nav-link" href="privacy.html">Privacy Policy</a>
+						</li>
+
+						<li class="nav-item text-nowrap">
+							<a class="nav-link" href="mailto:yjx9906@gmail.com">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+
+			
+		</div>
+	</nav>
+
+	<div id="page_container">
+		<div class="main">
+			<h3>
+				How to keep your footer where it belongs?
+				<div class="back"><a href="academicBlog.html"><< Back to Academic Blog list</a></div>
+			</h3>
+			<div class="imgbox"><img src="images/card02.png"></div>
+
+			<div class="container">
+				<p>A footer is the last element on the page. At a minimum it is at the bottom of the viewport, or lower if the page content is taller than the viewport. Simple, right?<br><br>When working with dynamic content that includes a footer, a problem sometimes occurs where the content on a page is not enough to fill it. The footer, rather than staying at the bottom of the page where we would want it to stay, rises up and leaves a blank space beneath it.<br><br>For a quick fix, you can absolutely position the footer at the bottom of the page. But this comes with its own downside. If the content grows larger than the viewport, the footer will remain ‘stuck’ to the bottom of the viewport, whether we want it to or not.</p>
+
+				<h5>Getting your footer under control <code>index.html</code>:</h5>
+				<img src="images/post/post02_1.png">
+
+				<h5><code>main.css</code>:</h5>
+				<img src="images/post/post02_2.png">
+
+				<p>So what is this doing?</p>
+				<ul>
+					<li>
+						The <code>page-container</code> goes around everything on the page, and sets its minimum height to 100% of the viewport height (<code>vh</code>). As it is <code>relative</code>, its child elements can be set with <code>absolute</code> position based on it later.
+					</li>
+					<li>
+						The <code>content-wrap</code> has a bottom padding that is the height of the footer, ensuring that exactly enough space is left for the footer inside the container they are both in. A wrapping <code>div</code> is used here that would contain all other page content.
+					</li>
+					<li>
+						The <code>footer</code> is set to <code>absolute</code>, sticking to the <code>bottom: 0</code> of the <code>page-container</code> it is within. This is important, as it is not <code>absolute</code> to the viewport, but will move down if the <code>page-container</code> is taller than the viewport. As stated, its height, arbitrarily set to <code>2.5rem</code> here, is used in the <code>content-wrap</code> above it.
+					</li>
+				</ol>
+				<div class="back"><a href="academicBlog.html"><< Back to Academic Blog list</a></div>
+			</div>
+
+		</div>
+
+		<footer>
+			Copyright 2019 &copy; by Yeoh Jing Xuan
+		</footer>
+	</div>
+
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="index.js"></script>
+</body>
+</html>

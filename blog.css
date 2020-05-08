@@ -1,0 +1,114 @@
+h3 {
+	margin: 0;
+	padding: 5% 0;
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	color: #7F0026;
+}
+
+.main {
+	margin-top: 150px;
+}
+
+.logo {
+	display: flex;
+	justify-content: center;
+	padding-bottom: 3%;
+}
+
+.logo img{
+	width: 25%;
+	height: 25%;
+}
+
+.card-deck {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: .5rem;
+}
+
+.card-deck .card {
+	border: 3px dashed rosybrown;
+	border-style: dotted dashed outset solid;
+	overflow: hidden;
+}
+
+.card-deck .card:hover {
+	box-shadow: 5px 5px 10px #6E3A3A;
+}
+
+.card-deck .card img {
+	min-height: 160px;
+}
+
+.card-deck .card .card-title {
+	color: #3D1B1B;
+}
+
+.card-deck .card .card-text {
+	color: #6E3A3A;
+}
+
+.card-deck .card .card-footer {
+	background-color: #F3E6E6;
+}
+
+.card-deck .card small {
+	color: rosybrown;
+}
+
+.none h5 {
+	font-size: 2rem;
+	text-align: center;
+	padding: 0 15% 5%;
+	line-height: 50px;
+}
+
+.back {
+	padding-bottom: 4%;
+}
+
+
+.back a {
+	font-family: 'Ubuntu', sans-serif;
+	font-size: 1.2rem;
+	color: #3D1B1B;
+}
+
+.back a:hover {
+	text-decoration-line: underline;
+}
+
+@media (max-width: 768px) {
+	.main {
+		margin-top: 14%;
+	}
+
+	.main .logo img {
+		width: 30%;
+		height: 30%;
+	}
+}
+
+@media (max-width: 480px) {
+	.main {
+		margin-top: 17%;
+	}
+
+	.main .logo img {
+		width: 40%;
+		height: 40%;
+	}
+}
+
+@media (max-width: 385px) {
+	.main {
+		margin-top: 18%;
+	}
+
+	.main .logo img {
+		width: 50%;
+		height: 50%;
+	}
+}
